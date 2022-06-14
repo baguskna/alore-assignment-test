@@ -1,0 +1,8 @@
+// Base styles import
+@import 'src/styles/base.scss';
+// Color variable import
+@import 'src/styles/colors.scss';
+// Material theme import
+@import 'src/styles/material-theme.scss';
+// Emoji picker import
+@import '~@ctrl/ngx-emoji-mart/picker';

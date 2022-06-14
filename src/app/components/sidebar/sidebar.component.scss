@@ -1,0 +1,127 @@
+@use 'src/styles' as *;
+
+.sidebar {
+  display: flex;
+}
+
+.sidebar__profile {
+  align-items: center;
+  background-color: $grey-20;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  width: 70px;
+}
+
+.sidebar__profile-top {
+  padding-top: 31px;
+}
+
+.sidebar__profile-bottom {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 35px;
+}
+
+.icon__menu,
+.icon__notification {
+  padding-top: 21px;
+}
+
+.sidebar__profile-pict__container {
+  padding-top: 21px;
+  position: relative;
+}
+
+.sidebar__profile-pict__online {
+  background-color: $green-10;
+  bottom: 3px;
+  border-radius: 50%;
+  height: 10px;
+  position: absolute;
+  right: 4px;
+  width: 10px;
+}
+
+.sidebar__profile-picture {
+  border-radius: 50%;
+  height: 50px;
+  object-fit: cover;
+  width: 50px;
+}
+
+.sidebar__nav {
+  background-color: $grey-10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+  width: 280px;
+}
+
+.sidebar__nav-title {
+  padding-top: 29px;
+}
+
+.sidebar__nav-input {
+  border: 1px solid $grey-0;
+  border-radius: 4px;
+  height: 35px;
+  margin-top: 41px;
+  padding: 0 12px;
+  width: 240px;
+}
+
+.sidebar__nav-segment {
+  color: $grey-30;
+  padding-top: 20px;
+}
+
+.sidebar__nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+
+  .sidebar__nav-btn__wrapper + .sidebar__nav-btn__wrapper {
+    margin-top: 16px;
+  }
+}
+
+.sidebar__nav-btn {
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar__nav-emoji {
+  font-size: 16px;
+  padding-right: 12px;
+}
+
+.sidebar__nav-bottom {
+  margin-bottom: 44px;
+  margin-right: 13px;
+}
+
+.sidebar__add-segment {
+  align-items: center;
+  background: $blue-10;
+  border: none;
+  border-radius: 5px;
+  color: $white-10;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 12px;
+  padding: 10px 18px;
+  width: 100%;
+
+  svg {
+    fill: $white-10;
+    margin-right: 10px;
+  }
+}

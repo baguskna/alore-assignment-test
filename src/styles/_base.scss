@@ -1,0 +1,59 @@
+body {
+  box-sizing: border-box;
+  font-family: Inter;
+  margin: 0;
+  padding: 0;
+}
+
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+button,
+.icon {
+  cursor: pointer;
+}
+
+.copy-headline--1 {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.copy-headline--2 {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0;
+}
+
+.copy-headline--5 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 12px;
+}
+
+.copy-body--large {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0;
+}
+
+.copy-body {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0;
+}

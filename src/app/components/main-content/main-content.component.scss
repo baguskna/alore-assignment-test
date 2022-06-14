@@ -1,0 +1,35 @@
+@use 'src/styles' as *;
+
+.main-content {
+}
+
+.main-content__header {
+  display: flex;
+  position: relative;
+
+  &::after {
+    border: 1px solid $grey-0;
+    bottom: 0;
+    content: '';
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 91%;
+  }
+}
+
+.main-content__header-wrapper {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+
+  .icon + .icon {
+    margin-left: 6px;
+  }
+}
+
+.main-content__nested {
+  height: 85vh;
+  overflow: auto;
+  padding: 29px 44px 0;
+}

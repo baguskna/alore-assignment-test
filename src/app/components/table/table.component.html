@@ -1,0 +1,27 @@
+<section class="table__section">
+  <div>
+    <h1 class="table__headline copy-headline--1">
+      {{titleIcon}} {{title}}
+      <span>
+        <svg class="icon icon__chevron-segment" (click)="toggle()" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#1875F0" fill-rule="evenodd" clip-rule="evenodd" d="M8.38647 7.67815L14.5272 1.5584C14.8625 1.20211 14.8625 0.6572 14.5272 0.32187C14.1919 -0.0134588 13.626 -0.0134588 13.2907 0.32187L7.77869 5.83384L2.26671 0.32187C1.91042 -0.0134588 1.36551 -0.0134588 1.03018 0.32187C0.694854 0.6572 0.694854 1.20211 1.03018 1.5584L7.14994 7.67815C7.50623 8.01348 8.05114 8.01348 8.38647 7.67815Z" />
+        </svg>
+      </span>
+    </h1>
+  </div>
+  <div class="table__article-wrapper" [@smoothCollapse]="expand ? 'final' : 'initial'">
+    <article class="table__article" *ngFor="let content of dataTable">
+      <div class="table__article-content" style.border="2px solid {{content.color}}">
+        <h1 class="table__article-emoji copy-headline--1">{{content.icon}}</h1>
+        <div class="table__article-dot" [style.background-color]="content.color"></div>
+      </div>
+      <p class="table__article-caption copy-headline--5">{{content.description}}</p>
+    </article>
+    <div class="table__article-add" (click)="openModal()">
+      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.47934 7.27066V1.55637C7.47934 0.925187 7.99101 0.413513 8.62219 0.413513C9.25338 0.413513 9.76505 0.925187 9.76505 1.55637V7.27066H15.4793C16.1105 7.27066 16.6222 7.78233 16.6222 8.41351C16.6222 9.0447 16.1105 9.55637 15.4793 9.55637H9.76505V15.2707C9.76505 15.9018 9.25338 16.4135 8.62219 16.4135C7.99101 16.4135 7.47934 15.9018 7.47934 15.2707V9.55637H1.76505C1.13387 9.55637 0.622192 9.0447 0.622192 8.41351C0.622192 7.78233 1.13387 7.27066 1.76505 7.27066H7.47934Z" />
+      </svg>
+      <p class="table__article-add__copy copy-body">Add a new table</p>
+    </div>
+  </div>
+</section>
